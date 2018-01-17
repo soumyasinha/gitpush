@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+#term{
+	
+	margin-top: 100px;
+}
+	
+
+</style>
+<body>
+
+	<div class="container">
+  
+  <form>
+  <!--   <label class="checkbox-inline">
+      <input type="checkbox" value="">I agree Terms & conditions
+    </label> -->
+
+    <!-- <INPUT TYPE="checkbox" NAME="Terms" VALUE="Conditions" checked id="terms"> I am aggree <a target="_blank" href="http://google.com" rel="nofollow noopener" >Terms and conditions</a><br>
+
+    <button type="button" class="btn btn-danger" id="sub">Danger</button> -->
+
+   
+     <div id="term">
+    <input type="checkbox" checked="checked" id="check_terms" ><a href="#" >   terms and conditions</a>
+       <input type="submit" id="pot" value="submit" class="btn btn-success" >
+       </div>
+
+
+
+
+    <script>
+
+
+    	
+    	
+    $('#check_terms').click(function() {
+        if ($(this).is(':checked')) {
+        	 $('#pot').removeAttr('disabled');
+            //$('#pot').attr('disabled', 'disabled');
+        } else {
+        	$('#pot').attr('disabled', 'disabled');
+            //$('#pot').removeAttr('disabled');
+        }
+    });
+
+    
+   
+
+
+
+    	
+    	
+    </script>
+   </form>
+</div>
+
+
+</body>
+</html>
